@@ -16,7 +16,7 @@ class Vector2D:
         return Vector2D(self.x * other, self.y * other)
     
     def __eq__(self, other):
-        return Vector2D(self, other)
+        return self.x == other.x and self.y == other.y
 
 a = Vector2D(1, 2)
 b = Vector2D(3, 4)
